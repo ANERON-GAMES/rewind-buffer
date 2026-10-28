@@ -1,0 +1,36 @@
+{
+  "name": "@aneron/rewind-buffer",
+  "version": "1.0.0",
+  "description": "Rewind entity positions to a past server time by interpolating a bounded per-entity history, and refuse hit checks past a max-rewind limit.",
+  "author": "Vadim Gubin",
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ANERON-GAMES/rewind-buffer.git"
+  },
+  "files": [
+    "src",
+    "LICENSE",
+    "README.md"
+  ],
+  "main": "./src/index.js",
+  "exports": "./src/index.js",
+  "sideEffects": false,
+  "scripts": {
+    "test": "node --test",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.12.0",
+    "eslint-config-prettier": "^10.1.8",
+    "globals": "^17.13.0",
+    "prettier": "^3.9.10"
+  }
+}
